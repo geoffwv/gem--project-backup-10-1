@@ -4,7 +4,7 @@ class CLI
     puts ""
     puts ":================================================:"
     puts ":                                                :"
-    puts ":  Welcome the English Premier League Info Gem!  :"
+    puts ":  Welcome the English Premier League Stadium Info Gem!  :"
     puts ":       Your one stop for all things EPL         :"
     puts ":                                                :"
     puts ":================================================:"
@@ -39,6 +39,7 @@ class CLI
     def print_teams
       Team.all.each.with_index(1) do |team, index|
         puts "#{index}. #{team.name}"
+      end
     end
     
     
