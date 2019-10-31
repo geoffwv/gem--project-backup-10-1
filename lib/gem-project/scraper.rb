@@ -7,7 +7,7 @@ class Scraper
     doc.css("tbody")[1].css("tr").drop(1).each do |fc_fact|
      
       team = Team.new
-      team.name = fc_fact.css("a")[0].text
+      team.name = fc_fact.css("a")[0].text.strip
       team.location = fc_fact.css("td")[1].text.strip
       team.stadium = fc_fact.css("td")[2].text.strip
       #binding.pry
@@ -21,12 +21,11 @@ class Scraper
   end
  
   def self.scrape_team_details(team)
-    #binding.pry 
     html = open("https://en.wikipedia.org#{team.url}")
     doc = Nokogiri::HTML(html)
-  
-      #team.stadium = doc.css("table tbody").css("tr")[4].css("a").text
-      
+     
+    team.blurb = doc.css("div#mw-content-text").css("p")[1].text.strip
+    #binding.pry
   end
   
   

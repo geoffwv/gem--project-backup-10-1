@@ -12,7 +12,7 @@ class CLI
     puts ""
     
     Scraper.scrape_teams
-    binding.pry 
+    #binding.pry 
     print_teams
     puts ""
     puts ""
@@ -32,11 +32,18 @@ class CLI
   end
     
     def print_team(team)
-      binding.pry 
+      #binding.pry 
       puts "#{team.name}"
       puts "Team location: #{team.location}"
       puts "Stadium name: #{team.stadium}"
       puts "The #{team.stadium} seats #{team.capacity} rabid fans."
+      puts ""
+      puts "Some info on #{team.name}:"
+      puts ":======================================:"
+      puts ""
+      puts "#{team.blurb}"
+      puts ""
+      puts ":======================================:"
       
     end
     

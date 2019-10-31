@@ -1,6 +1,6 @@
 class Team
   
-  attr_accessor :name, :team, :stadium, :url, :location, :capacity #the rest need defined
+  attr_accessor :name, :team, :stadium, :url, :location, :capacity, :blurb
   
   @@all = []
   
