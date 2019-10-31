@@ -37,8 +37,11 @@ class CLI
     end
     
     def print_teams
-      Team.all.each.with_index(1a)
+      Team.all.each.with_index(1) do |team, index|
+        puts "#{index}. #{team.name}"
     end
+    
+    
     
     
   end
