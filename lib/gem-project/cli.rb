@@ -34,6 +34,7 @@ class CLI
     def print_team(team)
       puts "#{team.name}"
       puts "Stadium name: #{team.stadium}"
+      puts "Stadium capacity: #{team.stadium_cap}"
     end
     
     def print_teams
