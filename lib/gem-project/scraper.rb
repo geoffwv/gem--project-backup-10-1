@@ -4,24 +4,29 @@ class Scraper
     html = open("https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League#Stadiums_and_locations")
     doc = Nokogiri::HTML(html)
     
-    doc.css("tbody")[1].css("tr").drop(1).each do |fc_name|
+    doc.css("tbody")[1].css("tr").drop(1).each do |fc_fact|
      
       team = Team.new
-      team.name = fc_name.css("a")[0].text
-      team.url = fc_name.css("a")[0].attribute("href").value
+      team.name = fc_fact.css("a")[0].text
+      team.location = fc_fact.css("td")[1].text.strip
+      team.stadium = fc_fact.css("td")[2].text.strip
+      #binding.pry
+      team.capacity = fc_fact.css("td")[3].text.strip
+      
+      team.url = fc_fact.css("a")[0].attribute("href").value
+      #binding.pry
+      team 
     end
     
   end
  
   def self.scrape_team_details(team)
-    binding.pry 
+    #binding.pry 
     html = open("https://en.wikipedia.org#{team.url}")
     doc = Nokogiri::HTML(html)
   
-      team.stadium = doc.css("table tbody").css("tr")[4].css("a").text
+      #team.stadium = doc.css("table tbody").css("tr")[4].css("a").text
       
-     
-
   end
   
   
