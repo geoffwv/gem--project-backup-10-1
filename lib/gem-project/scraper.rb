@@ -14,11 +14,12 @@ class Scraper
   end
  
   def self.scrape_team_details(team)
+    binding.pry 
     html = open("https://en.wikipedia.org#{team.url}")
     doc = Nokogiri::HTML(html)
   
       team.stadium = doc.css("table tbody").css("tr")[4].css("a").text
-      team.stadium_cap = doc.css("table tbody").css("tr")[7].css("a").text
+      
      
 
   end
