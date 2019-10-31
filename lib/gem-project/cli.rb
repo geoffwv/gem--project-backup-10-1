@@ -31,8 +31,14 @@ class CLI
     puts "Thanks for stopping by! See ya later!"
   end
     
+    def print_team(team)
+      puts "#{team.name}"
+      puts "Stadium name: #{team.stadium}"
+    end
     
-    
+    def print_teams
+      Team.all.each.with_index(1a)
+    end
     
     
   end
