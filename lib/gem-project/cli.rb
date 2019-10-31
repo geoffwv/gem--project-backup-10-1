@@ -4,7 +4,7 @@ class CLI
     puts ""
     puts ":================================================:"
     puts ":                                                :"
-    puts ":  Welcome the English Premier League Stadium Info Gem!  :"
+    puts ":  Welcome the English Premier League Info Gem!  :"
     puts ":       Your one stop for all things EPL         :"
     puts ":                                                :"
     puts ":================================================:"
@@ -21,7 +21,7 @@ class CLI
     input = gets.strip.downcase
     while input != "exit" do
       team = Team.all[input.to_i - 1]
-      Scraper.scrap_team_details(team) if !team.stadium
+      Scraper.scrape_team_details(team) if !team.stadium
       print_team(team)
       puts ""
       puts "Do you want to learn about another team?"
