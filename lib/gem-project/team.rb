@@ -1,6 +1,6 @@
 class Team
   
-  attr_accessor :name, :url, #the rest need defined
+  attr_accessor :name #:url #the rest need defined
   
   @@all = []
   

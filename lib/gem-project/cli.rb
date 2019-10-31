@@ -8,5 +8,14 @@ class CLI
     puts ":       Your one stop for all things EPL         :"
     puts ":                                                :"
     puts ":================================================:"
+    puts " "
+    puts " "
+    
+  end
+    
+    
+    
+    
+    
   end
   
