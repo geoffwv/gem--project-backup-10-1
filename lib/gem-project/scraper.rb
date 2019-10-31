@@ -17,8 +17,9 @@ class Scraper
     html = open("https://en.wikipedia.org#{team.url}")
     doc = Nokogiri::HTML(html)
     
+    binding.pry 
   
-      team.stadium = doc.css("tbody").css("tr").css("a")[0].attribute("href").value
+      team.stadium = doc.css("table tbody").css("tr")[5].css("title").value
 
   end
   
