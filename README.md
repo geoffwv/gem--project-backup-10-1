@@ -9,34 +9,15 @@ Make sure that Nokogiri and Pry are installed so all the requires will be fulfil
 gem install nokogiri
 gem install pry
 
-After that navigate your way to gem-project/bin and run the following command:
+## Usage
+
+To run the app you need to execute the file "epl" located in the bin directory. From there you will have the luxury of choosing which English Premier League team to find out more information on.
+
+Navigate your way to gem-project and run the following command:
 
 ruby bin/epl
 
 That will get you into the project and allow you to navigate your way around to find out facts about your favorite or most disliked EPL team>
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'gem-project'
-```
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install gem-project
-
-## Usage
-
-To run the gem you need to execute the file "epl" located in the bin directory. From there you will have the luxury of choosing which English Premier League team to find out more information on.
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
@@ -44,8 +25,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/'relat
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Gem::Project project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/'relational-server-7496'/gem-project/blob/master/CODE_OF_CONDUCT.md).
+The app is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
