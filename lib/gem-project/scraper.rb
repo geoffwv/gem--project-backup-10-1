@@ -21,8 +21,8 @@ class Scraper
     html = open("https://en.wikipedia.org#{team.url}")
     doc = Nokogiri::HTML(html)
      
-    team.blurb = doc.css("div#mw-content-text").css("p")[1].text.strip
-    binding.pry
+    team.nickname = doc.css("table.infobox").css("td")[2].text.strip
+    #binding.pry
   end
   
   

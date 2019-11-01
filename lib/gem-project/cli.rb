@@ -33,17 +33,13 @@ class CLI
     
     def print_team(team)
       #binding.pry 
-      puts "#{team.name}"
+      puts ":==========================:"
+      puts "Name: #{team.name}"
       puts "Team location: #{team.location}"
       puts "Stadium name: #{team.stadium}"
-      puts "The #{team.stadium} seats #{team.capacity} rabid fans."
-      puts ""
-      puts "Some info on #{team.name}:"
-      puts ":======================================:"
-      puts ""
-      puts "#{team.blurb}"
-      puts ""
-      puts ":======================================:"
+      puts "#{team.stadium} seats #{team.capacity} rabid fans."
+      puts "Nickname(s) for #{team.name}: #{team.nickname}"
+      puts ":==========================:"
       
     end
     
