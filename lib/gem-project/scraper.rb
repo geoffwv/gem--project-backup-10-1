@@ -21,8 +21,10 @@ class Scraper
     html = open("https://en.wikipedia.org#{team.url}")
     doc = Nokogiri::HTML(html)
      
-    team.nickname = doc.css("table.infobox").css("td")[2].text.strip
+    team.nickname = doc.css("table.infobox").css("td")[2].children.map{|n| n.text unless n.text == "[1]" || n.text.strip == ","}.compact.join(", ")
     #binding.pry
+    #team.nickname = doc.css("table.infobox").css("td")[2].text.strip
+   
   end
   
   
