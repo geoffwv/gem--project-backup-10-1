@@ -1,8 +1,7 @@
 # Gem::Project
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gem/project`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to my first gem! The EPL Info Gem lists facts about the teams in the 2019-2020 English Premier League, the greatest football league in the world!
+You can find out the name of your favorite (or least favorite) teams stadium, it capacity, where the team is actually from, and the nicknames for the team.
+I hope you enjoy the gem and learn something about the teams of the EPL!
 
 ## Installation
 
