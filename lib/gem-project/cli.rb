@@ -27,7 +27,7 @@ class CLI
         print_teams
       else
         puts ""
-        puts "I don't recognize that."
+        puts "I don't recognize that. Try again."
       end
   
       puts ""
@@ -37,11 +37,14 @@ class CLI
       
       input = gets.strip.downcase
     end
+    
+    puts ""
     puts "Thanks for stopping by! See ya later!"
+    puts "
+    "
   end
     
     def print_team(team)
-      #binding.pry 
       puts ":==========================:"
       puts "Name: #{team.name}"
       puts "Team location: #{team.location}"

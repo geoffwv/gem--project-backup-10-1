@@ -1,7 +1,7 @@
 # Gem::Project
 Welcome to my first gem! The EPL Info Gem lists facts about the teams in the 2019-2020 English Premier League, the greatest football league in the world!
 You can find out the name of your favorite (or least favorite) teams stadium, it capacity, where the team is actually from, and the nicknames for the team.
-I hope you enjoy the gem and learn something about the teams of the EPL!
+I hope you enjoy the gem and learn something about the teams of the EPL! Go Blues!
 
 ## Installation
 
@@ -10,7 +10,6 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'gem-project'
 ```
-
 And then execute:
 
     $ bundle
@@ -21,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To run the gem you need to execute the file "epl" located in the bin directory. From there you will have the luxury of choosing which English Premier League team to find out more information on.
 
 ## Development
 
