@@ -12,7 +12,6 @@ class CLI
     puts ""
     
     Scraper.scrape_teams
-    #binding.pry 
     print_teams
     puts ""
     puts ""
