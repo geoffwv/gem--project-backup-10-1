@@ -10,12 +10,9 @@ class Scraper
       team.name = fc_fact.css("a")[0].text.strip
       team.location = fc_fact.css("td")[1].text.strip
       team.stadium = fc_fact.css("td")[2].text.strip
-      #binding.pry
       team.capacity = fc_fact.css("td")[3].text.strip
-      
       team.url = fc_fact.css("a")[0].attribute("href").value
-      #binding.pry
-      team 
+      #team 
     end
     
   end
@@ -25,7 +22,7 @@ class Scraper
     doc = Nokogiri::HTML(html)
      
     team.blurb = doc.css("div#mw-content-text").css("p")[1].text.strip
-    #binding.pry
+    binding.pry
   end
   
   
