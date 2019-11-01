@@ -1,9 +1,19 @@
 # Gem::Project
-Welcome to my first gem! The EPL Info Gem lists facts about the teams in the 2019-2020 English Premier League, the greatest football league in the world!
+Welcome to my first CLI program! The EPL Info Gem lists facts about the teams in the 2019-2020 English Premier League, the greatest football league in the world!
 You can find out the name of your favorite (or least favorite) teams stadium, it capacity, where the team is actually from, and the nicknames for the team.
 I hope you enjoy the gem and learn something about the teams of the EPL! Go Blues!
 
 ## Installation
+Make sure that Nokogiri and Pry are installed so all the requires will be fulfilled! You should be able to use the following command to install them if they aren't already on your system.
+
+gem install nokogiri
+gem install pry
+
+After that navigate your way to gem-project/bin and run the following command:
+
+ruby bin/epl
+
+That will get you into the project and allow you to navigate your way around to find out facts about your favorite or most disliked EPL team>
 
 Add this line to your application's Gemfile:
 
