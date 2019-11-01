@@ -21,7 +21,7 @@ class CLI
     input = gets.strip.downcase
     while input != "exit" do
       team = Team.all[input.to_i - 1]
-      Scraper.scrape_team_details(team) 
+      Scraper.scrape_team_details(team) if !team.nickname
       print_team(team)
       puts ""
       puts "Do you want to learn about another team?"
