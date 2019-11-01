@@ -12,7 +12,6 @@ class Scraper
       team.stadium = fc_fact.css("td")[2].text.strip
       team.capacity = fc_fact.css("td")[3].text.strip
       team.url = fc_fact.css("a")[0].attribute("href").value
-      #team 
     end
     
   end
